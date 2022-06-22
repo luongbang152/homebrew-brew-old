@@ -112,8 +112,8 @@ class OpensslAT11 < Formula
   end
 
   def post_install
-    if OS.mac? && method(:macos_post_install)
-    if OS.linux? && method(:linux_post_install)
+    macos_post_install if OS.mac? 
+    linux_post_install if OS.linux?
   end
 
   def macos_post_install
