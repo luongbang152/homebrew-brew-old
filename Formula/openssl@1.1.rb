@@ -112,8 +112,12 @@ class OpensslAT11 < Formula
   end
 
   def post_install
-    macos_post_install if OS.mac? 
-    linux_post_install if OS.linux?
+    if OS.mac?
+      macos_post_install
+    end
+    if OS.linux?
+      linux_post_install
+    end
   end
 
   def macos_post_install
