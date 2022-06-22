@@ -12,12 +12,9 @@ class Postgresql < Formula
   end
 
   bottle do
-    sha256 arm64_monterey: "4cd881a0ec8c090e1a9ef51972a35acc025e3f4212170870417ff48df6586ed5"
-    sha256 arm64_big_sur:  "b0cbdfcd0d16f00ae6ab72bae6e55238b8dd4e0a22a063959f089b5d666e2db3"
-    sha256 monterey:       "cdb07755641a21feadaf1d6ef86b7eebb5ce2d16427a43808379ae60d14f2e70"
-    sha256 big_sur:        "d96a133cc4c718081f3c16e72af6f3626c1365e0daa945be3207797d6237fede"
-    sha256 catalina:       "60d2ad6b34d839071f0d70d5f4b482ad14d070817d88a9fb23b1b96eaa9ca030"
-    sha256 x86_64_linux:   "5acde475632243256539084dd1e02184b6787e6a71da4d5c76cc20b2d87612a8"
+    root_url "https://github.com/luongbang152/homebrew-brew/releases/download/postgresql-14.2"
+    sha256 big_sur:      "63b47fd17c953864f18e574fda70dfaa9b896cc3609b9bebcc4969cd586662a3"
+    sha256 x86_64_linux: "56ecc519119bcedb7fc1cd93125a8ff61eae133e58cbcb7e2b3faa3501a3963e"
   end
 
   depends_on "pkg-config" => :build
