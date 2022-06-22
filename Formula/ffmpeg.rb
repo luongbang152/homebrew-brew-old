@@ -14,13 +14,9 @@ class Ffmpeg < Formula
   end
 
   bottle do
-    rebuild 1
-    sha256 arm64_monterey: "ce63680952edd4c82bc73a00143ad5f87a2cc1f7c8e57078457b507d155ba94c"
-    sha256 arm64_big_sur:  "877fe3b70a34d6b2c1d3b59ee9a2107dd838cac42ffd7b1c2d9279cc55fbc4be"
-    sha256 monterey:       "06c17691891957a8fee5a6a20269aa9e221bd42aafeefcd5eeb4ff94a51f19dd"
-    sha256 big_sur:        "8ea54c02dbd8c19efc1cbfb7e105a9473c7e09d5e2564a4086a00d181f245e98"
-    sha256 catalina:       "53b165cfeeea5ae0d284c14ec13cc4a53dd6c12f4d6b00f12ab9efbbd920832c"
-    sha256 x86_64_linux:   "ea3430b0834f7b289b61fee2b0927ad26db9e4efc625b1906f69b7c156138dee"
+    root_url "https://github.com/luongbang152/homebrew-brew/releases/download/ffmpeg-5.0"
+    sha256 big_sur:      "cb362d2534fb2ebcefa5b622303053338e08a583f9530e35ae9026cfddc68234"
+    sha256 x86_64_linux: "6d222a755231c923f5029df0ee6ddcab1c57b4c933a971e352df4e472cfa743c"
   end
 
   depends_on "nasm" => :build
