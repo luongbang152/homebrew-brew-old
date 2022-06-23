@@ -18,7 +18,6 @@ class Postgresql < Formula
   end
 
   depends_on "pkg-config" => :build
-  depends_on "luongbang152/brew/icu4c"
 
   # GSSAPI provided by Kerberos.framework crashes when forked.
   # See https://github.com/Homebrew/homebrew-core/issues/47494.
@@ -26,6 +25,8 @@ class Postgresql < Formula
 
   depends_on "openssl@1.1"
   depends_on "readline"
+  
+  depends_on "luongbang152/brew/icu4c"
 
   uses_from_macos "libxml2"
   uses_from_macos "libxslt"
