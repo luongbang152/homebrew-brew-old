@@ -36,6 +36,7 @@ class Ffmpeg < Formula
   depends_on "libvmaf"
   depends_on "libvorbis"
   depends_on "libvpx"
+  depends_on "luongbang152/brew/icu4c"
   depends_on "opencore-amr"
   depends_on "openjpeg"
   depends_on "opus"
