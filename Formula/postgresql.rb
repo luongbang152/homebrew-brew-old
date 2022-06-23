@@ -23,10 +23,9 @@ class Postgresql < Formula
   # See https://github.com/Homebrew/homebrew-core/issues/47494.
   depends_on "krb5"
 
+  depends_on "luongbang152/brew/icu4c"
   depends_on "openssl@1.1"
   depends_on "readline"
-  
-  depends_on "luongbang152/brew/icu4c"
 
   uses_from_macos "libxml2"
   uses_from_macos "libxslt"
